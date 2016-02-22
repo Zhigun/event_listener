@@ -1,0 +1,34 @@
+development:
+  sessions:
+    default:
+      database: api_event_listener_development
+      hosts:
+        - localhost:27017
+  options:
+    raise_not_found_error: false
+test:
+  sessions:
+    default:
+      database: api_event_listener_test
+      hosts:
+        - localhost:27017
+  options:
+      raise_not_found_error: false
+qa:
+  sessions:
+    default:
+      database: api_event_listener
+      hosts:
+        - qa.vocvox.com:27017
+        - qa2.vocvox.com:27017
+  options:
+      raise_not_found_error: false
+production:
+  sessions:
+    default:
+      database: api_event_listener
+      hosts:
+        - app2.vocvox.com:27017
+        - app3.vocvox.com:27017
+  options:
+      raise_not_found_error: false

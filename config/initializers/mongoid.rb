@@ -1,0 +1,1 @@
+Mongoid.load!(File.join(ApiEventListener.root, 'config/mongoid.yml'))
